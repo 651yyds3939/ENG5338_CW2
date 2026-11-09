@@ -1,0 +1,5 @@
+model,status
+linear_reference,RUN: development only
+random_forest,NOT RUN
+extra_trees,NOT RUN
+hist_gradient_boosting,NOT RUN

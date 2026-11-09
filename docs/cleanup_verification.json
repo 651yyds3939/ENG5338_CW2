@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-09",
+  "operation": "English documentation editions and authorised repository cleanup",
+  "protected_file_sha256": {
+    "ENG5338_CW2_notebook_GAS4.ipynb": "99d3f80555b8ab9013a971a9273973f8de6429208e8ecf5dabdc72796c7b16df",
+    "data/gas-turbine-emissions.csv": "6295ecd391e757ab5e029bdb54aee607887374861f656a26281b5a0e4e524b85",
+    "member_handoff/cw2_common.py": "a4d00cbdaa246bf72ff430aed46d238e9ff00a9559b2be90260f59ea78e98f04",
+    "results/linear_reference_fold_metrics.csv": "8825540de58e0f23729e770a55d753b59e7e21a03203d5ac0d4fffd7b9451f68",
+    "results/split_manifest.csv": "1a8414c6ea8d9ad2593a849ee3ada3a8d266e2aabbf0030b48f46272e3ee8d8e",
+    "results/development_comparison.csv": "0f745fcf5121ff200e858f8517d32383a7a602e68dfd0e90aff0a7d7a4341248",
+    "results/linear_reference_benchmark.json": "fba1334c3db69ae370ea49a7941cfd483d81730142253c6173cf7241a92bd4e6",
+    "results/linear_reference_search.csv": "4b74930e619ccbd28482539c08f5dffbb22d42e55b41c3dffacf7efe4f3e2243",
+    "results/schema.csv": "b0113fa69164d8891b212d1ec29ae690194cd53f2f1202d4f0f2ed8acbbd5c95",
+    "results/runtime.json": "5614eac482874f21052ea629c58dcb63c35120277c6f3b11135f5cd89024ff6d",
+    "results/linear_reference_cv.png": "5934ee93e5c16173f1c384cff19ec086a48f9965224fc7b3f8da976833eaaae1",
+    "results/linear_reference_summary.json": "ef428f062b90b85e4fe08580823c0271514fba256d509bc2706c498ed20c507e",
+    "results/folds.csv": "1efcb11c61acaf1dcc86d9189095f58ef895f580f45b052bf539173c6e094168",
+    "results/protocol_draft.json": "e8f491e884ee3c416ac47d5bc168299e44d97275132fe37b486f17c06f0e927b",
+    "results/framework_verification.json": "33668500cbfe6ed472c3fb7efad4b1503b24baf07575449527766e3fc6b873cc",
+    "results/data_provenance.json": "157cf5579bce315c860c78be889cf6b85ad967720db88845a3c1bfcd59a5d2eb",
+    "results/development_overview.csv": "f3790e4006aa513c296b586e35a0f1cf7523150fc46b26db5539a6740c56dbed",
+    "results/experiment_status.csv": "6360da637b4f1faa686e5fb0bff07607fb500dd19d4c23a05ba8717c6d584433"
+  },
+  "protected_files_unchanged": true,
+  "chinese_document_locations": {
+    "README.md": "docs/zh/README.md",
+    "TASK_ALLOCATION.md": "docs/zh/TASK_ALLOCATION.md",
+    "候选模型说明与选型建议_zh.md": "docs/zh/候选模型说明与选型建议_zh.md",
+    "项目全解读_CW1与CW2对照_zh.md": "docs/zh/项目全解读_CW1与CW2对照_zh.md",
+    "notes/需求检查与周一讨论_zh.md": "docs/zh/需求检查与周一讨论_zh.md",
+    "notes/Notebook解读与问答_zh.md": "docs/zh/Notebook解读与问答_zh.md"
+  },
+  "removed_redundant_items": [
+    "member_handoff/packages/GAS4_member2_starter/ (byte-identical extracted ZIP copy)",
+    "member_handoff/__pycache__/ (Python cache)",
+    "figures/GAS4_Team_Task_Allocation_EN.png (root copy retained)",
+    "build_notebook.py (obsolete initial master-notebook generator; actual notebook retained)"
+  ],
+  "local_markdown_links_valid": true,
+  "python_sources_parse": true,
+  "zip_integrity_checked": true,
+  "candidate_models_fitted": false,
+  "final_test_run": false,
+  "git_initialised": false,
+  "github_published": false,
+  "scope_note": "Historical pre-privacy-cleanup snapshot. Later publication redaction is checked in publication_audit.json."
+}

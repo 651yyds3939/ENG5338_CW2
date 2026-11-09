@@ -1,0 +1,19 @@
+{
+  "model": "linear_reference",
+  "status": "RUN: development only",
+  "protocol_id": "454f332babc7",
+  "runtime_id": "32562bd19d88",
+  "best_params": {},
+  "train_mae": 0.673202418892975,
+  "validation_mae": 0.9073194008001245,
+  "validation_mae_sd": 0.1511109410632465,
+  "validation_rmse": 1.6892448649083878,
+  "validation_r2": 0.48049054430268506,
+  "validation_coverage": 0.7180097349918875,
+  "worst_fold_coverage": 0.5738236884802596,
+  "mae_gap": 0.23411698190714958,
+  "search_wall_s": 0.1472143809996851,
+  "configurations": 1,
+  "cv_fits": 5,
+  "refit_s": 0.015559196472167969
+}
