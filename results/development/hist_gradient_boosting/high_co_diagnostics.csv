@@ -1,0 +1,4 @@
+model,group,rows,mae,coverage,mean_prediction_minus_actual
+hist_gradient_boosting,all_validation,18490,0.7655029812186762,0.7915089237425635,-0.3430291809399646
+hist_gradient_boosting,above_training_q75,7267,1.2885869256118352,0.5630934360809137,-0.8966483823145799
+hist_gradient_boosting,above_training_q95,2211,2.2607573114599324,0.28177295341474445,-1.71453322394424

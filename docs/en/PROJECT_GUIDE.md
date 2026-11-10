@@ -1,5 +1,7 @@
 # GAS4 project explained: purpose, principles, methods, outcomes and CW1/CW2 links
 
+> Status note: this study document records the earlier design/framework stage. Current integrated code, results and directory locations are described in [the integration guide](INTEGRATION.md) and the root README.
+
 English edition of the [Chinese project explanation](../zh/项目全解读_CW1与CW2对照_zh.md), for learning, group coordination and Q&A rather than the final report.
 
 Sources: local CW1/CW2 briefs, CW2 templates, course dataset guide, the completed CW1 notebook, current CW2 notebook/results, and task allocation. **The assigned model pool is fixed; the final recommended pipeline is not yet selected.** Engineering thresholds must be justified from use, while results must come from actual runs.
@@ -353,7 +355,7 @@ Completed: requirement/template/data/CW1 inspection; structural/development chec
 
 These are development CV, gap-24 results, not final test. Local timing is not universal. OLS meets the configured latency budget but not coverage. Member 2 has subsequently reported progress in chat, but those artifacts must be received and verified before updating the repository comparison.
 
-Sources: [OLS summary](../../results/linear_reference_summary.json), [benchmark](../../results/linear_reference_benchmark.json), [runtime](../../results/runtime.json), [verification](../../results/framework_verification.json).
+Sources: [OLS summary](../../results/development/linear_reference/summary.json), [benchmark](../../results/costs/linear_reference.json), [runtime](../../results/development/runtime.json), [verification](../../results/integration_checks.json).
 
 Outstanding: application rationale; verified candidate search/analysis; common costs and scalability; overfitting/tail/sensitivity comparison; final selection/test; final English report/presentation; complete actual contribution statement with all-member agreement.
 

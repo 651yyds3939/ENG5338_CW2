@@ -1,0 +1,21 @@
+{
+  "model": "hist_gradient_boosting",
+  "protocol_id": "454f332babc7",
+  "status": "RUN: development only",
+  "best_params": {
+    "model__l2_regularization": 1.0,
+    "model__learning_rate": 0.05,
+    "model__max_leaf_nodes": 15
+  },
+  "train_mae": 0.41114588909841954,
+  "validation_mae": 0.7655029812186763,
+  "validation_mae_sd": 0.10670819134960338,
+  "validation_rmse": 1.4657428900382037,
+  "validation_r2": 0.5974055189021069,
+  "validation_coverage": 0.7915089237425637,
+  "worst_fold_coverage": 0.6695511087074094,
+  "mae_gap": 0.35435709212025673,
+  "configurations": 8,
+  "cv_fits": 40,
+  "search_wall_s_local_only": 36.18073430000004
+}

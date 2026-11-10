@@ -1,5 +1,5 @@
-model,status
-linear_reference,RUN: development only
-random_forest,NOT RUN
-extra_trees,NOT RUN
-hist_gradient_boosting,NOT RUN
+model,validation_status,search_status,cost_status,final_test_status
+linear_reference,"RUN: selected settings, five development folds",Fixed OLS reference,Recorded common-runtime evidence available,SEALED / NOT RUN
+random_forest,"RUN: selected settings, five development folds",Submitted latest search audited; rerun optional,Recorded common-runtime evidence available,SEALED / NOT RUN
+extra_trees,"RUN: selected settings, five development folds",Submitted latest search audited; rerun optional,Recorded common-runtime evidence available,SEALED / NOT RUN
+hist_gradient_boosting,"RUN: selected settings, five development folds",Submitted latest search audited; rerun optional,Recorded common-runtime evidence available,SEALED / NOT RUN

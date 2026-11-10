@@ -1,8 +1,0 @@
-{
-  "path": "<home>/Intro_to_AI_ML/ENG5338_CW2/data/gas-turbine-emissions.csv",
-  "sha256": "6295ecd391e757ab5e029bdb54aee607887374861f656a26281b5a0e4e524b85",
-  "source": "Unmodified course CSV copied from CW1",
-  "development_rows": 22191,
-  "holdout_rows": 14542,
-  "prior_cw1_test_exposure": true
-}

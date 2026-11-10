@@ -1,0 +1,53 @@
+{
+  "model": "random_forest",
+  "estimator_class": "sklearn.ensemble._forest.RandomForestRegressor",
+  "initial_estimator_params": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "criterion": "squared_error",
+    "max_depth": null,
+    "max_features": 0.8,
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 100,
+    "n_jobs": 1,
+    "oob_score": false,
+    "random_state": 42,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "scale": false,
+  "grid": {
+    "model__n_estimators": [
+      600
+    ],
+    "model__max_features": [
+      0.5
+    ],
+    "model__min_samples_leaf": [
+      20
+    ],
+    "model__max_depth": [
+      11
+    ],
+    "model__max_samples": [
+      0.75,
+      0.85,
+      0.9
+    ]
+  },
+  "best_params": {
+    "model__max_depth": 11,
+    "model__max_features": 0.5,
+    "model__max_samples": 0.9,
+    "model__min_samples_leaf": 20,
+    "model__n_estimators": 600
+  },
+  "protocol_id": "454f332babc7",
+  "shared_module_sha256": "a4d00cbdaa246bf72ff430aed46d238e9ff00a9559b2be90260f59ea78e98f04"
+}

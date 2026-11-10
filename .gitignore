@@ -14,5 +14,6 @@ Thumbs.db
 *.pem
 *.key
 
-# Keep generated ZIPs, but not duplicate manually extracted starter folders
-member_handoff/packages/GAS4_member*_starter/
+# Independent scratch reruns and personal exports; canonical evidence stays tracked
+results/member_runs/
+results/search_reruns/

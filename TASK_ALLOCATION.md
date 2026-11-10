@@ -23,21 +23,21 @@ Estimator: `RandomForestRegressor`.
 - Return runnable code, the search grid, best parameters, fold results and a short analysis.
 - Write the model's methods and results text.
 
-## Member 3 — Extra Trees Regression
+## Member 3 — Poon (Sirawich Anantapong): Extra Trees Regression
 
 Estimator: `ExtraTreesRegressor`.
 
 - Train, tune and analyse the assigned model.
 - Meet the same preprocessing, validation, evidence and reporting requirements as member 2.
 
-## Member 4 — Histogram Gradient Boosting Regression
+## Member 4 — Hansini Devaraja: Histogram Gradient Boosting Regression
 
 Estimator: `HistGradientBoostingRegressor`.
 
 - Train, tune and analyse the assigned model.
 - Meet the same preprocessing, validation, evidence and reporting requirements as member 2.
 
-## Member 5 — Computational cost and final testing
+## Member 5 — Sauhandikaa: Computational cost and final testing
 
 - Define and apply one timing methodology.
 - Measure all models' training and prediction cost in the same runtime.
@@ -64,3 +64,7 @@ The agreed model pool is not the final recommended pipeline: that recommendation
 AI assistance supports tutoring, coding, inspection and documentation; members must review and understand their work. The final contribution statement must reflect actual work and be agreed by all members.
 
 [Chinese source](docs/zh/TASK_ALLOCATION.md) · [Contribution record](notes/contributions_and_ai.md)
+
+## Current handoff
+
+All three model owners have submitted their notebooks and numerical results. Current portable notebooks are under `experiments/`; original starters are preserved in the ignored local backup. Wenyi integrates received files. Member 5 uses `experiments/member5_benchmark.ipynb` to review/measure costs. Final testing awaits group agreement. Group chat file delivery is accepted; GitHub PRs are optional.

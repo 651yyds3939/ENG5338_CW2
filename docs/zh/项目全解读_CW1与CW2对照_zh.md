@@ -1,5 +1,7 @@
 # GAS4 项目全解读：要做什么、原理与方法、最终效果，以及 CW1 和 CW2 的联系
 
+> 状态说明：本学习文档保留早期设计和框架阶段的说明，当前代码、目录及结果请看[整合说明与下一步](整合说明与下一步_zh.md)和根目录 README。
+
 本文面向 Wenyi 和小组成员，用于从头理解项目、讨论分工和准备问答，不是最终提交报告。
 
 依据包括本地 CW1/CW2 brief、CW2 报告模板、课程数据指南、你实际完成的 CW1 Notebook、CW2 公共 Notebook、当前结果文件及 `TASK_ALLOCATION.md`。
@@ -533,8 +535,8 @@ AI 生成的公共部分也需要成员理解、审核和适配，不能直接�
 时间属于已记录的单线程 CPU 运行环境，不是任何机器都相同。
 可以说“OLS 速度满足当前 10 ms 草案，但覆盖率未达到当前 90% 草案”；不能宣称整个项目已经达标。
 
-来源：[OLS 汇总](../../results/linear_reference_summary.json)、[成本测量](../../results/linear_reference_benchmark.json)、
-[运行环境](../../results/runtime.json)、[框架检查](../../results/framework_verification.json)。
+来源：[OLS 汇总](../../results/development/linear_reference/summary.json)、[成本测量](../../results/costs/linear_reference.json)、
+[运行环境](../../results/development/runtime.json)、[框架检查](../../results/integration_checks.json)。
 
 ### 未完成
 

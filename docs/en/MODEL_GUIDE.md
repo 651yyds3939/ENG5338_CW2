@@ -1,5 +1,7 @@
 # GAS4: model principles, strengths and selection rationale
 
+> Status note: this study document records the earlier design/framework stage. Current integrated code, results and directory locations are described in [the integration guide](INTEGRATION.md) and the root README.
+
 English edition of the [Chinese model guide](../zh/候选模型说明与选型建议_zh.md), prepared for group discussion and Q&A.
 
 **Execution plan:** member 2 uses Random Forest, member 3 Extra Trees, and member 4 histogram gradient boosting, alongside the linear reference. Alternative methods below are background material, not a change to this allocation. Only the linear-reference results have been verified in the repository; candidate advantages are hypotheses to test, not measured rankings.

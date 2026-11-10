@@ -1,0 +1,25 @@
+{
+  "model": "hist_gradient_boosting",
+  "status": "RUN: selected configuration, development only",
+  "protocol_id": "454f332babc7",
+  "best_params": {
+    "model__l2_regularization": 1.0,
+    "model__learning_rate": 0.05,
+    "model__max_leaf_nodes": 15
+  },
+  "train_mae": 0.41114588909841954,
+  "train_rmse": 0.8304303936329862,
+  "train_r2": 0.8117326358960165,
+  "train_coverage": 0.9362841139912847,
+  "train_negative_fraction": 0.0,
+  "validation_mae": 0.7655029812186763,
+  "validation_rmse": 1.4657428900382037,
+  "validation_r2": 0.5974055189021069,
+  "validation_coverage": 0.7915089237425637,
+  "validation_negative_fraction": 0.0,
+  "mae_gap": 0.35435709212025673,
+  "validation_mae_sd": 0.10670819134960338,
+  "worst_fold_coverage": 0.6695511087074094,
+  "final_test_run": false,
+  "runtime_id": "e36f23212f5d"
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "member": "member2",
+    "original_filename": "GAS4_member2_starter.zip",
+    "sha256": "ae7dd7155039fcf09d6ac6dbe911a34258cb0218b1ab690fa044742486d27978",
+    "local_location": ".local_private/submissions/2026-11-10/member2/GAS4_member2_starter.zip"
+  },
+  {
+    "member": "member2",
+    "original_filename": "member2_model1.ipynb",
+    "sha256": "fc0afa6dae33ae50c8f0c17195c76bf872a6532a90de3209de13f4632048bb76",
+    "local_location": ".local_private/submissions/2026-11-10/member2/member2_model1.ipynb"
+  },
+  {
+    "member": "member2",
+    "original_filename": "member2_results.zip",
+    "sha256": "64d2726d064f83420553296a72fc632b1be1bf8b1f42e486f35f5287ef787098",
+    "local_location": ".local_private/submissions/2026-11-10/member2/member2_results.zip"
+  },
+  {
+    "member": "member3",
+    "original_filename": "member3_model2.ipynb",
+    "sha256": "749f303b94e34a5c060444ba9fd7763784c293d010ef343e8965e0d07c1463f4",
+    "local_location": ".local_private/submissions/2026-11-10/member3/member3_model2.ipynb"
+  },
+  {
+    "member": "member3",
+    "original_filename": "member3_model2 (1).ipynb",
+    "sha256": "99d313aeb9cc712e654e5da0279d0f8d281032097fb51a5a2d283f6db72f1a8e",
+    "local_location": ".local_private/submissions/2026-11-10/member3/member3_model2 (1).ipynb"
+  },
+  {
+    "member": "member3",
+    "original_filename": "member3_results.zip",
+    "sha256": "5d9283995cff73dfda55892414e74cb336d404352e126a0cc16620d0d790b47a",
+    "local_location": ".local_private/submissions/2026-11-10/member3/member3_results.zip"
+  },
+  {
+    "member": "member3",
+    "original_filename": "member3_results (1).zip",
+    "sha256": "52dec18fdfe932d69721888a2f2e2e9096474a0cff3e5b345d630505c7845cdc",
+    "local_location": ".local_private/submissions/2026-11-10/member3/member3_results (1).zip"
+  },
+  {
+    "member": "member4",
+    "original_filename": "member4_model3.ipynb",
+    "sha256": "59c44dd701d1b7ea8cac64126930c6d3ef488513c81c995e73ef74e37d72d94f",
+    "local_location": ".local_private/submissions/2026-11-10/member4/member4_model3.ipynb"
+  },
+  {
+    "member": "member4",
+    "original_filename": "member4_results.zip",
+    "sha256": "352c4efa0a6af2259d20cc824d2a0f893974ede26adf2b941005d40592c81660",
+    "local_location": ".local_private/submissions/2026-11-10/member4/member4_results.zip"
+  }
+]

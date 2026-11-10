@@ -1,7 +1,0 @@
-{
-  "protocol_matches_main_notebook": true,
-  "ols_metrics_match_main_notebook": true,
-  "candidate_grids_valid": true,
-  "candidate_models_run": false,
-  "final_test_run": false
-}

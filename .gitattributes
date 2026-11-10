@@ -1,0 +1,10 @@
+# Consistent code/document line endings across systems
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.ipynb text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+*.tex text eol=lf
+# Preserve the exact course CSV bytes used by the SHA-256 protocol
+data/gas-turbine-emissions.csv -text

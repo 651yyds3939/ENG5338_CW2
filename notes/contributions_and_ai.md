@@ -1,15 +1,15 @@
 # Contribution and AI-assistance record
 
-This is a living record, not the final agreed statement. Proposed ownership is not
+This is a living record, not the final agreed statement. Student IDs remain in original local submissions for members to verify. Historical log entries below describe their dates, not current outstanding files. Proposed ownership is not
 evidence of completed human work. Replace placeholders with names and student IDs.
 
 | Member | Assigned responsibility | Actual implementation | Actual writing/review | Notebook location | Evidence/date |
 |---|---|---|---|---|---|
 | 1 — Wenyi | Framework, OLS, validation and integration | AI-assisted framework available; record actual human review/adaptation | To record | Sections 1–4, 7–8 and integration | Executed shared notebook and results; human evidence to record |
-| 2 — Kiki | Random Forest | Progress reported in chat; artifacts not yet integrated/verified | To record | Section 6, Random Forest entry | To receive |
-| 3 — name/ID to supply | Extra Trees | To record | To record | Section 6, Extra Trees entry | To supply |
-| 4 — name/ID to supply | Histogram gradient boosting | To record | To record | Section 6, HGB entry | To supply |
-| 5 — name/ID to supply | Cost and final testing | To record | To record | Sections 5 and 9 | To supply |
+| 2 — Jiaqi Chen (Kiki) | Random Forest | Latest three-setting search, selected parameters and validation plotting supplied | Member analysis received; ChatGPT coding/writing assistance disclosed | Master sections 2–5; member 2 experiment | Original receipt hashes; submitted/member2/latest |
+| 3 — Sirawich Anantapong (Poon) | Extra Trees | Initial and latest search, selected pipeline and plot supplied | Member analysis received; Claude assistance disclosed | Master sections 2–5; member 3 experiment | Submitted/member3/run1 and latest |
+| 4 — Hansini Devaraja | Histogram gradient boosting | Eight-configuration search, fold metrics, graphs and notebook supplied | Member analysis received; ChatGPT learning/troubleshooting disclosed | Master sections 2–5; member 4 experiment | Submitted/member4/latest |
+| 5 — Sauhandikaa | Cost review/measurement and final testing | Entry prepared; actual member measurement/review pending | To record | Master sections 6–8; member 5 experiment | Agent reference measurements must not be credited to member 5 |
 
 ## AI assistance
 
@@ -99,3 +99,36 @@ saved/future runtime records; numerical experiment evidence was retained. Person
 entries were made to locate the one shared CSV in a Git checkout, as well as their
 standalone package CSV. The unpublished initial commit was replaced with the cleaned
 snapshot and a GitHub no-reply author address. No GitHub publication was performed.
+
+2026-11-10 — Codex reviewed the raw member 2 RF notebook/starter ZIP and member 4
+HGB notebook/results ZIP supplied by Wenyi, plus the provided chat screenshots.
+Checked protocol/fold boundaries, exported-score consistency, actual code changes
+and contribution/AI explanations. Reproduced member 2's fixed final configuration
+on five development folds (not the multi-round search), reran member 4's supplied
+eight-setting search and selected folds, and computed a shared training-quantile
+high-CO validation diagnostic. Recorded small RF cross-version discrepancies and
+missing member-2 result/weighted-experiment artifacts. No final test or master
+integration was performed. Raw returns remain unchanged and locally excluded from
+Git; privacy-safe review evidence is in `reviews/2026-11-10/`.
+
+### 2026-11-10 — Member 3 received-work review
+
+AI assistance checked the supplied Extra Trees archive, matched protocol and numerical fold boundaries, verified search/summary consistency and reproduced the selected five-fold configuration. All summary metrics match within 1e-12. The full 24-configuration search was not repeated. Added separate review evidence and next-step notes; the master notebook remains unchanged. No final test, commit or push was performed. Member 3's personal notebook is still outstanding.
+
+### 2026-11-10 — Member 2 results ZIP received
+
+AI assistance checked archive integrity, protocol and folds, three search configurations, selected parameters, fold-summary arithmetic and agreement with the previously received notebook. Checked the screenshot's weighted arithmetic without treating it as verified analysis code. Saved review evidence; no further training, final test, master-notebook integration, commit or push occurred.
+
+### 2026-11-10 — Latest Member 3 notebook and results received
+
+AI assistance matched the latest notebook to member3_results (1).zip, verified the 27-configuration search record and protocol, and independently reproduced the selected depth-14 configuration on all five development folds. Updated the review comparison while preserving earlier evidence. Member-written analysis and AI disclosure are present. No final test, master integration, commit or push occurred.
+
+### 2026-11-10 — Comprehensive integration requested by Wenyi
+
+Codex preserved raw returns byte-for-byte under ignored local submissions; organised coursework, starters and historical evidence; extracted submitted numerical records; integrated latest member configurations into shared portable code and master/personal notebooks; retained member analysis and AI disclosures; added same-runtime benchmark entry and Chinese study explanations. Default master execution regenerates selected-configuration development results and figures. Full-grid reruns are explicit optional switches. Final test, final recommendation, report and slides remain pending. Human review and member 5's own measurement/interpretation must be recorded separately. Run completion and exact environment are recorded in result artifacts, not inferred from this log. No Git commit or push is performed by this integration.
+
+Integration execution evidence — All four selected configurations completed chronological validation, each with 18,490 validation predictions. Codex also executed the common four-pipeline reference cost measurement, with three timed full-development fits per model and repeated single/batch predictions. Costs are labelled as Codex reference measurements, not member 5 work. Fresh-kernel master execution, portable bootstrap checks, original-return hashes and saved prediction consistency are checked by the integration verification scripts. Full supplied-grid reruns are not claimed in this integration execution. Final test remains sealed.
+
+### 2026-11-10 — Pre-update cleanup
+
+At Wenyi's request, Codex moved superseded starter packages, baseline-only framework outputs, old audit/review documents and redundant allocation/figure-generation assets out of the upload tree into an ignored local backup. Current code, member numerical searches, development prediction exports, cost samples, course materials and bilingual study guides were retained. Fixed links and the Chinese entry guide. Original member returns remain untouched. No model retuning, final testing, Git commit or GitHub push was performed in this cleanup.

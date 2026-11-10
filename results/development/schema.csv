@@ -1,0 +1,13 @@
+field,dtype,missing
+year,int64,0
+at,float64,0
+ap,float64,0
+ah,float64,0
+afdp,float64,0
+gtep,float64,0
+tit,float64,0
+tat,float64,0
+tey,float64,0
+cdp,float64,0
+co,float64,0
+nox,float64,0

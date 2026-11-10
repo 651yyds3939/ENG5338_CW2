@@ -1,5 +1,7 @@
 # Shared notebook: purpose, measured evidence and Q&A
 
+> Status note: this study document records the earlier design/framework stage. Current integrated code, results and directory locations are described in [the integration guide](INTEGRATION.md) and the root README.
+
 English edition of the [Chinese notebook guide](../zh/Notebook解读与问答_zh.md). Model allocation follows [the current task file](../../TASK_ALLOCATION.md).
 
 ## 1. Data flow

@@ -1,0 +1,18 @@
+{
+  "data_sha256": "6295ecd391e757ab5e029bdb54aee607887374861f656a26281b5a0e4e524b85",
+  "shape": [
+    36733,
+    12
+  ],
+  "missing_values": 0,
+  "duplicate_complete_rows": 7,
+  "rows_by_year": {
+    "2011": 7411,
+    "2012": 7628,
+    "2013": 7152,
+    "2014": 7158,
+    "2015": 7384
+  },
+  "prior_cw1_test_exposure": true,
+  "cw2_final_test_run": false
+}

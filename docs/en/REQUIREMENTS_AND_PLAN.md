@@ -1,5 +1,7 @@
 # GAS4: coursework requirements, experiment design and discussion checklist
 
+> Status note: this study document records the earlier design/framework stage. Current integrated code, results and directory locations are described in [the integration guide](INTEGRATION.md) and the root README.
+
 English edition of the [Chinese planning document](../zh/需求检查与周一讨论_zh.md). This is study/planning material, not the final report. Submission-facing notebook explanations are English.
 
 Sources are the local `coursework brief2.pdf`, `template_cw2_ENG5.pdf`, `template_cw2_ENG5.tex`, the course dataset guide in CW1, the supplied Moodle screenshot and the actual final CW1 notebook. CW1 source material is read-only.

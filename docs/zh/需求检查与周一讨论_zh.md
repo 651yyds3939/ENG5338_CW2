@@ -1,5 +1,7 @@
 # GAS4：需求检查、实验设计与周一讨论材料
 
+> 状态说明：本学习文档保留早期设计和框架阶段的说明，当前代码、目录及结果请看[整合说明与下一步](整合说明与下一步_zh.md)和根目录 README。
+
 本文件用于中文学习和组内讨论，不是最终英文报告。Notebook 面向提交的说明为英文。
 依据：本目录 `coursework brief2.pdf`（任务/提交/评分）、`template_cw2_ENG5.pdf`、
 `template_cw2_ENG5.tex`，以及 CW1 目录的 `AI4_coursework-datasets.pdf`。
