@@ -8,3 +8,6 @@
 *.tex text eol=lf
 # Preserve the exact course CSV bytes used by the SHA-256 protocol
 data/gas-turbine-emissions.csv -text
+# Frozen assessment snapshots are SHA-256 checked byte-for-byte
+results/final/selection_inputs/*.csv -text whitespace=cr-at-eol
+results/final_extra_trees/selection_inputs/*.csv -text whitespace=cr-at-eol

@@ -5,4 +5,4 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
 from cw2_project import benchmark_all
 if __name__ == '__main__':
-    benchmark_all(ROOT / 'results/costs', measured_by='Codex integration reference; member 5 review pending')
+    benchmark_all(ROOT / 'results/costs', measured_by='Codex integration reference; separate Linux measurement')

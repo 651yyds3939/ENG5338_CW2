@@ -14,4 +14,11 @@
 
 安装 requirements.lock.txt 后，运行 `python run_notebook.py`。完整项目包含 src、数据、搜索记录、计时样本和预测结果。报告正文 7 页、附录 1 页、贡献声明另 1 页；幻灯片 11 页，计划讲 10 分钟，随后回答 10 分钟问题。
 
-五位成员学号均已补齐，统一使用 7 位数字；贡献声明等待全员确认。上传前核对姓名、数字和分工，准备整个 Notebook 的问答。发布状态：待推送 GitHub、待上传 Moodle。Moodle 页面提供截止时间和上传回执。
+五位成员学号均已补齐，统一使用 7 位数字；贡献声明等待全员确认。上传前核对姓名、数字和分工，准备整个 Notebook 的问答。将提交文件发到群里核对，确认贡献后上传 Moodle。Moodle 页面提供截止时间和上传回执。
+
+
+## 生成与群聊包
+
+文档依赖在 requirements.build.txt。本机身份文件是 .local_private/submission_identity.json，包含 GAS4 组号、五位成员的 number/name/student_id 及贡献确认布尔值 all_members_reviewed_contribution_statement。
+
+依次运行 scripts/build_submission.py、scripts/package_submission.py、scripts/check_submission.py、scripts/package_group_review.py。群聊包生成到 submission/ENG5338_CW2_GAS4_for_group.zip，包含提交文件、可编辑稿、英文说明、讲稿、问答和完整项目。

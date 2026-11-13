@@ -23,7 +23,14 @@ from pptx.dml.color import RGBColor
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'submission';OUT.mkdir(exist_ok=True)
 E=json.loads((ROOT/'results/submission/evidence.json').read_text())
-IDENT=json.loads((ROOT/'.local_private/submission_identity.json').read_text())
+identity_path=ROOT/'.local_private/submission_identity.json'
+if not identity_path.is_file():
+    raise SystemExit('Create .local_private/submission_identity.json using docs/en/SUBMISSION_GUIDE.md, then rerun the document build.')
+IDENT=json.loads(identity_path.read_text())
+assert IDENT['group']=='GAS4' and len(IDENT['members'])==5
+assert sorted(member['number'] for member in IDENT['members'])==list(range(1,6))
+assert all(member['name'].strip() and re.fullmatch(r'\d{7}',str(member['student_id'])) for member in IDENT['members']), 'Supply five names and seven-digit student IDs in the local identity file.'
+assert isinstance(IDENT['all_members_reviewed_contribution_statement'],bool)
 T=pd.DataFrame(E['comparison']).set_index('model')
 F=E['final']; TEST=F['test']; H=T.loc['hist_gradient_boosting']; ET=T.loc['extra_trees']; S=ET; PRIOR=E['prior_hgb']
 NAMES={'linear_reference':'OLS','random_forest':'Random Forest','extra_trees':'Extra Trees','hist_gradient_boosting':'HGB'}

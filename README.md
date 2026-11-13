@@ -4,13 +4,13 @@ Estimate contemporaneous gas-turbine CO from nine ambient/process measurements. 
 
 ## Submission and finalisation
 
-The local `submission/` directory contains the course report PDF, presentation PDF and executed notebook, plus editable slides, presenter/Q&A notes and a complete reproducibility ZIP. It is ignored by Git because the report contains student IDs. See [submission instructions](docs/en/SUBMISSION_GUIDE.md) or [中文提交说明](docs/zh/提交与答辩说明_zh.md). All five student IDs are filled in using seven digits; all members must review the contribution statement before upload. Publication status: local changes await GitHub push and Moodle upload.
+The local `submission/` directory contains the course report PDF, presentation PDF and executed notebook, plus editable slides, presenter/Q&A notes and a complete reproducibility ZIP. It is ignored by Git because the report contains student IDs. See [submission instructions](docs/en/SUBMISSION_GUIDE.md) or [中文提交说明](docs/zh/提交与答辩说明_zh.md). All five student IDs are filled in using seven digits; all members must review the contribution statement before upload. Course deliverables are shared in the group for review, then uploaded through Moodle.
 
 ## Open these files
 
 - [Master notebook](ENG5338_CW2_notebook_GAS4.ipynb): data checks, tuning/replay audit, actual four-model validation, Member 5 timings, feasibility, locked final assessment and contribution records. Run all cells with a Python kernel from the project root.
 - [Member 5 benchmark notebook](experiments/member5_benchmark.ipynb): received Member 5 notebook, with independently measured Windows costs and the member's interpretation. Saved measurements are under `results/member5_local_py310/`; earlier integration measurements are kept separately.
-- [Chinese integration guide](docs/zh/整合说明与下一步_zh.md): current state, directory map, running instructions and next steps.
+- [Notebook guide](docs/en/NOTEBOOK_GUIDE.md) and [中文说明](docs/zh/Notebook解读与问答_zh.md): current structure, evidence and running instructions.
 - [Task allocation](TASK_ALLOCATION.md) and [contribution/AI log](notes/contributions_and_ai.md).
 
 The three model owners have supplied their notebooks and result archives. Their latest configurations are integrated. Member 3's current version is depth 14, with 400 trees, minimum leaf size 10 and max_features=0.8. The original depth-12 run is retained as history.
@@ -27,7 +27,7 @@ Default master execution re-runs five-fold validation of the four selected confi
 
 ## Current protocol and boundaries
 
-CO target; inputs AT/AP/AH/AFDP/GTEP/TIT/TAT/TEY/CDP; development 2011–2013, reserved 2014–2015; five expanding folds, gap=24 rows, seed=42; MAE selects parameters. Imputation and OLS scaling fit within each training fold. NOx is excluded as a deployment input. Course CSV and protocol are hash checked.
+CO target; inputs AT/AP/AH/AFDP/GTEP/TIT/TAT/TEY/CDP; development 2011–2013, later assessment 2014–2015; five expanding folds, gap=24 rows, seed=42; MAE selects parameters. Imputation and OLS scaling fit within each training fold. NOx is excluded as a deployment input. Course CSV and protocol are hash checked.
 
 **Recommended pipeline: Extra Trees**, with development-validation MAE 0.7226 mg/m³ and coverage 81.76%. Median single-row prediction is 19.03 ms on Member 5's Windows laptop. The project target is ≥90% within ±1 mg/m³. The final comparison prioritises MAE and reports computational cost alongside accuracy.
 
@@ -50,22 +50,21 @@ CO target; inputs AT/AP/AH/AFDP/GTEP/TIT/TAT/TEY/CDP; development 2011–2013, r
 | `results/final_extra_trees/` | Accuracy-first decision revision and secondary Extra Trees assessment |
 | `results/submission/` | Combined tables, document evidence and notebook execution audit |
 | `submission/` | Local-only report/slides/notebook and supporting upload files |
-| `figures/development/` | Reproducibly generated plots; allocation figure is under `figures/` |
+| `figures/development/`, `figures/submission/` | Reproducibly generated validation and report/slide plots |
 | `notes/` | Member-reported analyses, receipt hashes and living contribution/AI log |
 | `docs/coursework/` | Original brief and report templates |
-| `docs/en/`, `docs/zh/` | English and Chinese project/study guides; early numerical examples are historical |
+| `docs/en/`, `docs/zh/` | Current English and Chinese model, notebook and submission guides |
 | `.local_private/pre_github_update_2026-11-10/` | Local-only backup of superseded starters, outputs and review history |
 | `.local_private/submissions/` | Untouched original received files, local only and ignored by Git |
 
 Original member files are archived locally. Redundant versions are preserved outside the active root. Raw returns include student IDs and local paths and are kept in ignored local storage. Submitted numerical evidence is published separately; original names and hashes are in `notes/received_manifest.json`.
 
-For now, members may send notebook/ZIP files in the group and Wenyi integrates them. GitHub branches/PRs remain available; received files document the members’ model work. The public collaboration repository is `651yyds3939/ENG5338_CW2`. GitHub publication awaits a local commit and push.
+For now, members may send notebook/ZIP files in the group and Wenyi integrates them. GitHub branches/PRs remain available; received files document the members’ model work. The public collaboration repository is `651yyds3939/ENG5338_CW2`. The local `submission/` directory contains the group-review ZIP and course files.
 
-## Study material
+## Project guides
 
-- [Requirements and experiment plan](docs/en/REQUIREMENTS_AND_PLAN.md) · [中文](docs/zh/需求检查与周一讨论_zh.md)
-- [Project guide and CW1/CW2 relationship](docs/en/PROJECT_GUIDE.md) · [中文](docs/zh/项目全解读_CW1与CW2对照_zh.md)
-- [Model explanations](docs/en/MODEL_GUIDE.md) · [中文](docs/zh/候选模型说明与选型建议_zh.md)
-- [Current integration details](docs/en/INTEGRATION.md)
+- [Notebook and reproduction](docs/en/NOTEBOOK_GUIDE.md) · [中文](docs/zh/Notebook解读与问答_zh.md)
+- [Model comparison](docs/en/MODEL_GUIDE.md) · [中文](docs/zh/候选模型说明与选型建议_zh.md)
+- [Submission and document build](docs/en/SUBMISSION_GUIDE.md) · [中文](docs/zh/提交与答辩说明_zh.md)
 
 Report and slides are built from verified Notebook exports using `scripts/build_submission.py` (optional document dependencies in `requirements.build.txt`). `scripts/package_submission.py` copies the executed Notebook and packages supporting files. Student identity data is held only in the ignored local identity file. Final contribution wording must be reviewed by all members. Dataset: Kaya, Tüfekci and Uzun (2019), *Gas Turbine CO and NOx Emission Data Set*, DOI 10.24432/C5WC95.

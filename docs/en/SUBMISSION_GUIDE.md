@@ -24,4 +24,24 @@ Build documents with `scripts/build_submission.py` and optional `requirements.bu
 
 ## Upload preparation
 
-All five student IDs are filled in using seven digits. All members should confirm the contribution statement, review the whole notebook and practise Q&A. Upload one group set and complete the Moodle peer evaluation. Publication status: local changes ready for GitHub push and Moodle upload. Use the live Moodle page for the deadline and submission receipt.
+All five student IDs are filled in using seven digits. All members should confirm the contribution statement, review the whole notebook and practise Q&A. Upload one group set and complete the Moodle peer evaluation. Share the course files in the group, confirm contributions and upload the final group set to Moodle. Use the live Moodle page for the deadline and submission receipt.
+
+## Local document generation
+
+The project checkout includes numerical evidence and document-generation scripts. For a new checkout, create `.local_private/submission_identity.json` locally with:
+
+- `group`: `GAS4`.
+- `members`: five objects, each with `number` (1–5), `name` and `student_id` (a seven-digit string).
+- `all_members_reviewed_contribution_statement`: a boolean reflecting the group's confirmation.
+
+Install optional document dependencies, build the report/slides, package the project, check the course files and create the group-review ZIP in this order:
+
+```sh
+python -m pip install -r requirements.build.txt
+python scripts/build_submission.py
+python scripts/package_submission.py
+python scripts/check_submission.py
+python scripts/package_group_review.py
+```
+
+The resulting group ZIP is `submission/ENG5338_CW2_GAS4_for_group.zip`. It contains the three course files, editable report/slides, English instructions, speaking/Q&A notes and the complete project under `ENG5338_CW2/`. Identities, course documents and group-review packages remain in ignored local storage.
