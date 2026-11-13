@@ -44,13 +44,24 @@ def main():
         os.chdir(location)
         for path in (ROOT / 'experiments').glob('*.ipynb'):
             nb = json.loads(path.read_text())
-            setup = next(cell for cell in nb['cells'] if cell['cell_type'] == 'code')
+            setup = next(cell for cell in nb['cells']
+                         if cell['cell_type'] == 'code'
+                         and 'PROJECT = next' in ''.join(cell['source']))
             scope = {}
             exec(compile(''.join(setup['source']), str(path), 'exec'), scope)
             assert scope['PROJECT'] == ROOT
     os.chdir(ROOT)
-    assert not (ROOT / 'results/final_test_metrics.json').exists()
-    print(f'Passed: four-model prediction exports, latest settings, portable setup and {checked_raw} local original hashes. Final test sealed.')
+    if (ROOT / 'results/final/metrics.json').exists():
+        from cw2_submission import verify_member5, verify_final, FINAL_DIR
+        verify_member5()
+        lock = json.loads((ROOT / 'results/final/decision_lock.json').read_text())
+        verify_final(lock)
+        if (FINAL_DIR/'metrics.json').exists():
+            verify_final(json.loads((FINAL_DIR/'decision_lock.json').read_text()))
+        final_status = 'Original HGB and revised Extra Trees evidence and Member 5 raw timings verified.'
+    else:
+        final_status = 'Final assessment not yet run.'
+    print(f'Passed: four-model prediction exports, latest settings, portable setup and {checked_raw} local original hashes. {final_status}')
 
 
 if __name__ == '__main__':

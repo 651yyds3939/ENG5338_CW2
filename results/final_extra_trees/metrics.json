@@ -1,0 +1,68 @@
+{
+  "model": "extra_trees",
+  "protocol_id": "454f332babc7",
+  "evaluated_at_utc": "2026-11-13T02:30:02.505993+00:00",
+  "performed_by": "Codex under Wenyi's instruction; Member 5 supplied development cost measurements",
+  "decision_lock_sha256": "fab351a2da319ceab55d73b5c5e338c950ede5a2ce34adae5e7b9521a1e21351",
+  "predictions_sha256": "e2a357222032a2725efafbb59d8e64cfe022cc85206db98b8a6fc539d77adb3c",
+  "runtime_id": "053686122821",
+  "development_rows": 22191,
+  "test_rows": 14542,
+  "training": {
+    "mae": 0.5158972356660795,
+    "rmse": 1.0889762185995397,
+    "r2": 0.7749865383529952,
+    "coverage": 0.9014465323779911,
+    "negative_fraction": 0.0
+  },
+  "test": {
+    "mae": 0.8011292039095628,
+    "rmse": 1.365361134019513,
+    "r2": 0.6110796711019568,
+    "coverage": 0.7335992298170816,
+    "negative_fraction": 0.0
+  },
+  "by_year": [
+    {
+      "year": 2014,
+      "rows": 7158,
+      "mae": 0.7666447613000053,
+      "rmse": 1.335589757900248,
+      "r2": 0.5570663826238798,
+      "coverage": 0.7679519418832076,
+      "negative_fraction": 0.0
+    },
+    {
+      "year": 2015,
+      "rows": 7384,
+      "mae": 0.8345581909354585,
+      "rmse": 1.3936143418010507,
+      "r2": 0.6111307692066748,
+      "coverage": 0.7002979414951246,
+      "negative_fraction": 0.0
+    }
+  ],
+  "training_q95": 6.1675,
+  "tail_rows": 701,
+  "tail_test": {
+    "mae": 2.0094285287961493,
+    "rmse": 4.134598284167703,
+    "r2": 0.15012089448251975,
+    "coverage": 0.47218259629101283,
+    "negative_fraction": 0.0
+  },
+  "test_mean_prediction_minus_actual": -0.05387887254646572,
+  "tail_mean_prediction_minus_actual": -1.1500140274979787,
+  "negative_predictions": 0,
+  "fit_s_single_run_not_benchmark": 5.277375628997106,
+  "authoritative_cw2_test_prediction_calls": 1,
+  "retuned_after_test": false,
+  "prediction_count_scope": "One Extra Trees assessment; original HGB assessment is separately preserved",
+  "cw2_distinct_models_assessed_on_this_period": 2,
+  "selection_policy_revised_after_prior_test": true,
+  "independent_confirmatory_test": false,
+  "prior_hgb_result_visible": true,
+  "assessment_status": "Secondary assessment on previously exposed 2014\u20132015 data; no independent confirmation available",
+  "deployment_approved": false,
+  "prior_cw1_test_exposure": true
+}

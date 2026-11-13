@@ -17,3 +17,6 @@ Thumbs.db
 # Independent scratch reruns and personal exports; canonical evidence stays tracked
 results/member_runs/
 results/search_reruns/
+
+# Course-upload files contain student IDs; do not publish by accident
+/submission/

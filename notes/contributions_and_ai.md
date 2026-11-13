@@ -9,7 +9,7 @@ evidence of completed human work. Replace placeholders with names and student ID
 | 2 — Jiaqi Chen (Kiki) | Random Forest | Latest three-setting search, selected parameters and validation plotting supplied | Member analysis received; ChatGPT coding/writing assistance disclosed | Master sections 2–5; member 2 experiment | Original receipt hashes; submitted/member2/latest |
 | 3 — Sirawich Anantapong (Poon) | Extra Trees | Initial and latest search, selected pipeline and plot supplied | Member analysis received; Claude assistance disclosed | Master sections 2–5; member 3 experiment | Submitted/member3/run1 and latest |
 | 4 — Hansini Devaraja | Histogram gradient boosting | Eight-configuration search, fold metrics, graphs and notebook supplied | Member analysis received; ChatGPT learning/troubleshooting disclosed | Master sections 2–5; member 4 experiment | Submitted/member4/latest |
-| 5 — Sauhandikaa | Cost review/measurement and final testing | Entry prepared; actual member measurement/review pending | To record | Master sections 6–8; member 5 experiment | Agent reference measurements must not be credited to member 5 |
+| 5 — Sauhandikaa | Cost review/measurement and final testing | Independent four-pipeline Windows benchmark and accuracy–cost interpretation supplied | Received benchmark method, interpretation and limitations text | Master sections 6–8; member 5 experiment | Original Member5_Results.zip and results/member5_local_py310 |
 
 ## AI assistance
 
@@ -132,3 +132,24 @@ Integration execution evidence — All four selected configurations completed ch
 ### 2026-11-10 — Pre-update cleanup
 
 At Wenyi's request, Codex moved superseded starter packages, baseline-only framework outputs, old audit/review documents and redundant allocation/figure-generation assets out of the upload tree into an ignored local backup. Current code, member numerical searches, development prediction exports, cost samples, course materials and bilingual study guides were retained. Fixed links and the Chinese entry guide. Original member returns remain untouched. No model retuning, final testing, Git commit or GitHub push was performed in this cleanup.
+
+
+### 2026-11-13 — Submission finalisation commissioned by Wenyi
+
+Wenyi explicitly instructed Codex to complete integration, decision, final testing, report, slides and reproducibility checks. Member 5's received archive was preserved unchanged with its receipt hash; its independent Windows benchmark, environment and interpretation were integrated separately from the older AI reference run. Codex replayed the latest owner grids, executed common selected-configuration validation, recorded HGB as the lowest-validation-MAE candidate within the unchanged 10 ms budget, and withheld deployment approval because no candidate meets the coverage target. The decision lock precedes one authoritative fixed-model CW2 assessment; no test-driven retuning or alternative final-test comparison is authorised by this workflow. Execution artifacts establish completed runs.
+
+Codex generated the report, presentation PDF/editable PPTX, speaking/Q&A notes and supporting reproducibility package from Notebook exports. This final assessment and drafting are not falsely attributed to independently completed Member 5 work or all-member human writing. AI coding, analysis and drafting assistance are disclosed. At Wenyi's request, Member 5's as-yet unknown student ID remains blank. All-member reading/agreement to the contribution statement remains a human requirement and is not fabricated. No Moodle submission, GitHub push, peer evaluation or oral presentation is performed.
+
+
+### 2026-11-13 — Explicit accuracy-first revision to Extra Trees
+
+After reviewing why HGB had been selected and seeing its assessment result, Wenyi explicitly requested switching to the model with higher predictive accuracy. Codex selected Extra Trees using the already available development-validation MAE/coverage ranking, with the exact unchanged Member 3 settings. The original 10 ms hard gate lacked actual application evidence and is now a descriptive historical reference; the 90% coverage target is unchanged. This is a disclosed post-exposure revision of selection policy, not a preregistered blind choice or unanimous group endorsement.
+
+The original HGB `results/final/` record is retained unchanged. A separate revision lock and secondary Extra Trees assessment are in `results/final_extra_trees/`. The original submission files and source are preserved in the ignored `.local_private/submission_v1_hgb/` backup. Two CW2 models have now been assessed on the same 2014–2015 period, which was also used in CW1. The revised assessment is not independent confirmation and does not meet a strict one-model/one-untouched-test design; further confirmation requires new data. No Extra Trees parameter retuning or subsequent assessment-driven winner selection is performed.
+
+Codex updated and checked the report, slides, master notebook, guides, Q&A notes and reproducibility package. Generated text and assessment work remain AI-assisted under Wenyi's direction, not Member 5's independent work. Member 5 ID and all-member contribution review remain pending. No GitHub push or Moodle upload is performed.
+
+
+### Student identity update — 2026-11-13
+
+Wenyi supplied all five student IDs and requested seven-digit numeric formatting. The local identity file and generated report now include all five IDs. The report cover and contribution table use the same identity data.

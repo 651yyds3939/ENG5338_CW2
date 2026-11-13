@@ -1,5 +1,7 @@
 # Integration — 10 November 2026
 
+> Historical integration snapshot (10 November). For the current final assessment and submission files, see [Submission guide](SUBMISSION_GUIDE.md).
+
 The root master notebook is the current entry point. Three member-supplied tuned configurations and OLS are re-evaluated under the same chronological folds. Source searches remain under `results/submitted/`; new selected-configuration outputs remain under `results/development/`. Search evidence is audited, not silently represented as a freshly repeated full search.
 
 Original returned notebooks and ZIPs are preserved byte-for-byte under ignored `.local_private/submissions/`, with their hashes in `notes/received_manifest.json`. Attributed member analysis is under `notes/`. Portable entries under `experiments/` use one shared implementation in `src/`, with no member-local drive paths. Original HGB graphs remain in the preserved local ZIP; current plots are regenerated consistently. Export cells follow plotting.

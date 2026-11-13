@@ -1,0 +1,5 @@
+# Optional PDF/PowerPoint generation only
+reportlab==5.0.1
+PyMuPDF==2.0
+python-pptx==1.0.2
+Pillow==13.0.0

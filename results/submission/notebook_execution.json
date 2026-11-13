@@ -1,0 +1,12 @@
+{
+  "completed_at_utc": "2026-11-13T02:47:39.383753+00:00",
+  "status": "success",
+  "error_outputs": 0,
+  "code_cells": 8,
+  "executed_code_cells": 8,
+  "notebook_sha256": "0fd1383441714f0f9ddc52e973bee5ebcee2ffda3629decc83ba62cebbb50de9",
+  "execution": "fresh kernel; common selected-configuration validation; submitted search and cost audit; original HGB plus revised Extra Trees assessment/cache verification; prior exposure disclosed",
+  "numerical_execution_notebook_sha256": "3bdd11c41ab5fd4c76fa9ba949eb6b40676b0d2a460870a3fb7ff34cbba4bd10",
+  "cached_view_refreshed_at_utc": "2026-11-13T02:50:37.610922+00:00",
+  "cached_view_refresh": "Assessment display rerendered from verified saved predictions; full numerical execution retained"
+}

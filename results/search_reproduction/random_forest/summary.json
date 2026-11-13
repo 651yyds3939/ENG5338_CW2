@@ -1,0 +1,23 @@
+{
+  "model": "random_forest",
+  "protocol_id": "454f332babc7",
+  "status": "RUN: development only",
+  "best_params": {
+    "model__max_depth": 11,
+    "model__max_features": 0.5,
+    "model__max_samples": 0.9,
+    "model__min_samples_leaf": 20,
+    "model__n_estimators": 600
+  },
+  "train_mae": 0.41397601373349513,
+  "validation_mae": 0.7372116700572297,
+  "validation_mae_sd": 0.08572890105773989,
+  "validation_rmse": 1.5079024931671203,
+  "validation_r2": 0.5766571959892377,
+  "validation_coverage": 0.8117901568415359,
+  "worst_fold_coverage": 0.6919956733369389,
+  "mae_gap": 0.3232356563237344,
+  "configurations": 3,
+  "cv_fits": 15,
+  "search_wall_s_local_only": 189.9653843959968
+}

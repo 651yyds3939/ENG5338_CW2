@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "fresh_kernel_notebook": true,
+  "notebook_error_outputs": 0,
+  "report_main_pages": 7,
+  "report_appendix_pages": 1,
+  "contribution_pages": 1,
+  "slides": 11,
+  "planned_talk_seconds": 600,
+  "numerical_consistency_checked": true,
+  "raw_windows_timing_medians_and_p95_checked": true,
+  "immutable_decision_precedes_final_assessment": true,
+  "standalone_extracted_reproducibility_zip_checked": true,
+  "private_originals_not_needed_for_reproduction": true,
+  "report_and_slides_rendered_and_visually_reviewed": true,
+  "editable_pptx_converted_to_11_page_pdf": true,
+  "member5_student_id": "blank at user request",
+  "all_member_endorsement_claimed": false,
+  "github_pushed": false,
+  "moodle_submitted": false,
+  "recommended_model": "extra_trees",
+  "assessment_models": [
+    "hist_gradient_boosting",
+    "extra_trees"
+  ],
+  "one_saved_assessment_per_model": true,
+  "selection_policy_revised_after_prior_test": true,
+  "independent_confirmatory_test": false,
+  "original_hgb_record_preserved": true,
+  "original_10ms_gate": "withdrawn; still shown as historical reference"
+}

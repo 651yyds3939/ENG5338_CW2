@@ -52,5 +52,11 @@
     "original_filename": "member4_results.zip",
     "sha256": "352c4efa0a6af2259d20cc824d2a0f893974ede26adf2b941005d40592c81660",
     "local_location": ".local_private/submissions/2026-11-10/member4/member4_results.zip"
+  },
+  {
+    "member": "member5",
+    "original_filename": "Member5_Results.zip",
+    "sha256": "556beb9417f1aab455913563a064e8b3008512c0d218e4e9e433836f8dfa6890",
+    "local_location": ".local_private/submissions/2026-11-13/member5/Member5_Results.zip"
   }
 ]

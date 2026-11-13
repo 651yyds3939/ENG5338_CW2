@@ -1,0 +1,62 @@
+{
+  "model": "hist_gradient_boosting",
+  "protocol_id": "454f332babc7",
+  "evaluated_at_utc": "2026-11-13T01:04:50.184743+00:00",
+  "performed_by": "Codex under Wenyi's instruction; Member 5 supplied development cost measurements",
+  "decision_lock_sha256": "b327749e229c80e5bbfbdcc8aad38a7e74e2eff87bb77245ce840de5d1b03fa7",
+  "predictions_sha256": "c5208bc6bab983719266ce7fdf2e379b796dd94f05f87e45d4a86ec02f469e2f",
+  "runtime_id": "20d6144752a6",
+  "development_rows": 22191,
+  "test_rows": 14542,
+  "training": {
+    "mae": 0.531499971963054,
+    "rmse": 0.9934331173335073,
+    "r2": 0.8127382933646771,
+    "coverage": 0.892253616330945,
+    "negative_fraction": 0.0
+  },
+  "test": {
+    "mae": 0.899841513050367,
+    "rmse": 1.534895235972777,
+    "r2": 0.5085005363747006,
+    "coverage": 0.7000412597992023,
+    "negative_fraction": 0.0
+  },
+  "by_year": [
+    {
+      "year": 2014,
+      "rows": 7158,
+      "mae": 0.795482646755234,
+      "rmse": 1.3445850652022817,
+      "r2": 0.5510799015886239,
+      "coverage": 0.7472757753562448,
+      "negative_fraction": 0.0
+    },
+    {
+      "year": 2015,
+      "rows": 7384,
+      "mae": 1.0010062970347335,
+      "rmse": 1.6991543378952736,
+      "r2": 0.4219252179780174,
+      "coverage": 0.6542524377031419,
+      "negative_fraction": 0.0
+    }
+  ],
+  "training_q95": 6.1675,
+  "tail_rows": 701,
+  "tail_test": {
+    "mae": 2.7077939423443067,
+    "rmse": 4.384030767723222,
+    "r2": 0.044484582628050995,
+    "coverage": 0.2810271041369472,
+    "negative_fraction": 0.0
+  },
+  "test_mean_prediction_minus_actual": -0.0016713576464367625,
+  "tail_mean_prediction_minus_actual": -0.6000146665020556,
+  "negative_predictions": 0,
+  "fit_s_single_run_not_benchmark": 0.3340465600194875,
+  "authoritative_cw2_test_prediction_calls": 1,
+  "retuned_after_test": false,
+  "deployment_approved": false,
+  "prior_cw1_test_exposure": true
+}

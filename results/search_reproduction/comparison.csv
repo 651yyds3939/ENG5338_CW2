@@ -1,0 +1,4 @@
+model,configurations,cv_fits,replayed_validation_mae,submitted_validation_mae,difference
+random_forest,3,15,0.7372116700572297,0.7371450244526968,6.664560453284452e-05
+extra_trees,27,135,0.7225941280939981,0.7225941280939981,0.0
+hist_gradient_boosting,8,40,0.7655029812186763,0.7655029812186763,0.0

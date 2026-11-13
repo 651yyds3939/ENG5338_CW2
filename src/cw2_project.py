@@ -63,7 +63,8 @@ def data_check(output_dir):
     record = {'data_sha256': DATA_SHA256, 'shape': list(raw.shape),
               'missing_values': int(raw.isna().sum().sum()), 'duplicate_complete_rows': int(raw.duplicated().sum()),
               'rows_by_year': {str(k):int(v) for k,v in raw.groupby('year').size().items()},
-              'prior_cw1_test_exposure': True, 'cw2_final_test_run': False}
+              'prior_cw1_test_exposure': True,
+              'cw2_final_test_run': (ROOT/'results/final/metrics.json').exists()}
     write_json(output_dir/'data_checks.json', record)
     del raw
     return schema, record

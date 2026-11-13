@@ -1,5 +1,5 @@
-model,validation_status,search_status,cost_status,final_test_status
-linear_reference,"RUN: selected settings, five development folds",Fixed OLS reference,Recorded common-runtime evidence available,SEALED / NOT RUN
-random_forest,"RUN: selected settings, five development folds",Submitted latest search audited; rerun optional,Recorded common-runtime evidence available,SEALED / NOT RUN
-extra_trees,"RUN: selected settings, five development folds",Submitted latest search audited; rerun optional,Recorded common-runtime evidence available,SEALED / NOT RUN
-hist_gradient_boosting,"RUN: selected settings, five development folds",Submitted latest search audited; rerun optional,Recorded common-runtime evidence available,SEALED / NOT RUN
+model,validation_status,search_status,cost_status,assessment_status
+linear_reference,"RUN: five common development folds","Fixed OLS reference","Member 5 Windows measurements","Not assessed on later period in CW2"
+random_forest,"RUN: five common development folds","Latest grid reproduced; parameters unchanged","Member 5 Windows measurements","Not assessed on later period in CW2"
+extra_trees,"RUN: five common development folds","Latest grid reproduced; parameters unchanged","Member 5 Windows measurements","Current accuracy-first candidate: secondary assessment on exposed period"
+hist_gradient_boosting,"RUN: five common development folds","Latest grid reproduced; parameters unchanged","Member 5 Windows measurements","Initial assessment preserved; selection policy subsequently revised"
