@@ -1,4 +1,0 @@
-model,configurations,cv_fits,submitted_validation_mae,source,selected_params
-random_forest,3,15,0.7371450244526968,results/submitted/member2/latest,"{'model__max_depth': 11, 'model__max_features': 0.5, 'model__max_samples': 0.9, 'model__min_samples_leaf': 20, 'model__n_estimators': 600}"
-extra_trees,27,135,0.7225941280939981,results/submitted/member3/latest,"{'model__max_depth': 14, 'model__max_features': 0.8, 'model__min_samples_leaf': 10, 'model__n_estimators': 400}"
-hist_gradient_boosting,8,40,0.7655029812186763,results/submitted/member4/latest,"{'model__l2_regularization': 1.0, 'model__learning_rate': 0.05, 'model__max_leaf_nodes': 15}"

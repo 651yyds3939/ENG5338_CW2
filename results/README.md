@@ -1,15 +1,13 @@
 # Experiment evidence
 
-- `submitted/`: received model-owner searches and environments. Member 3 run1 records the earlier depth-12 search; latest uses depth 14.
-- `search_reproduction/`: executed latest-grid replays in the integration environment.
-- `development/`: common five-fold validation, per-row predictions, diagnostics and runtime.
-- `member5_local_py310/`: Member 5 Windows timing samples, environment and interpretation table.
-- `costs/`: earlier Codex Linux reference timing, with its own environment.
-- `final/`: original HGB decision and assessment.
-- `final_extra_trees/`: accuracy-first Extra Trees decision and assessment.
-- `submission/`: combined report/slide evidence, tables and notebook execution audit.
-- `member_runs/`, `search_reruns/`: ignored scratch reruns.
+- submitted/: latest received model-owner searches, settings and environments.
+- search_reproduction/: executed latest-grid replays in the common environment.
+- development/: common five-fold scores, per-row predictions, high-CO diagnostics and runtime.
+- member5_local_py310/: Member 5 Windows timing samples and environment.
+- final/: original HGB decision, assessment and frozen input snapshots.
+- final_extra_trees/: accuracy-first Extra Trees decision, assessment and frozen input snapshots.
+- submission/: combined accuracy/cost table and main-notebook execution audit.
 
-Extra Trees is selected by development MAE: 0.7226, with 81.76% coverage. Member 5 measured 19.03 ms single-row latency. The coverage target is 90%; 10 ms remains the original timing reference.
+Each experiment directory retains its protocol and folds as part of the experiment record. Assessment snapshots are SHA-256 checked byte-for-byte. Extra Trees has development MAE 0.7226 and coverage 81.76%; the later assessment gives MAE 0.8011 and coverage 73.36%. HGB was assessed first on the same 2014–2015 observations, which were also used in CW1. Both records retain the assessment history.
 
-HGB was assessed first (MAE 0.8998, coverage 70.00%). Wenyi then prioritised accuracy and selected Extra Trees from the existing development ranking. Extra Trees was assessed on the same 2014–2015 observations (MAE 0.8011, coverage 73.36%); CW1 also used those years. Both records retain their decision inputs, hashes and predictions. A new future period supplies the next confirmation stage.
+Older searches, early Linux reference costs and superseded status summaries are archived locally. Generated intermediate tables, per-model plot exports and scratch reruns are ignored by Git; the notebook recreates these outputs.

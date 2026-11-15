@@ -32,7 +32,7 @@ For Jupyter or VS Code, select the environment, restart the kernel and run all c
 - Scores: training and validation MAE, RMSE, R², coverage within ±1 mg/m³ and negative-prediction fraction. MAE selects tuning parameters.
 - Original tuning exports: `results/submitted/`; common search replays: `results/search_reproduction/`.
 - Common validation and per-row predictions: `results/development/`.
-- Member 5 Windows cost samples: `results/member5_local_py310/`; earlier Linux reference measurements: `results/costs/`.
+- Member 5 Windows cost samples: `results/member5_local_py310/`.
 - Original HGB assessment: `results/final/`; revised Extra Trees assessment: `results/final_extra_trees/`.
 - Combined document evidence and execution audit: `results/submission/`.
 

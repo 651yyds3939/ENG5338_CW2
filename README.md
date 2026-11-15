@@ -1,70 +1,57 @@
 # ENG5338 CW2 — GAS4
 
-Estimate contemporaneous gas-turbine CO from nine ambient/process measurements. Compare Linear Regression with Random Forest, Extra Trees and Histogram Gradient Boosting using one chronological protocol.
+Estimate contemporaneous gas-turbine CO (mg/m³) from nine ambient/process measurements. Compare OLS, Random Forest, Extra Trees and Histogram Gradient Boosting under one chronological protocol.
 
-## Submission and finalisation
+## Start here
 
-The local `submission/` directory contains the course report PDF, presentation PDF and executed notebook, plus editable slides, presenter/Q&A notes and a complete reproducibility ZIP. It is ignored by Git because the report contains student IDs. See [submission instructions](docs/en/SUBMISSION_GUIDE.md) or [中文提交说明](docs/zh/提交与答辩说明_zh.md). All five student IDs are filled in using seven digits; all members must review the contribution statement before upload. Course deliverables are shared in the group for review, then uploaded through Moodle.
+- [Main notebook](ENG5338_CW2_notebook_GAS4.ipynb): executed data checks, tuning evidence, four-model validation, timing comparison, model selection and assessments.
+- [Notebook guide](docs/en/NOTEBOOK_GUIDE.md): running instructions and evidence map.
+- [Model comparison](docs/en/MODEL_GUIDE.md): settings, measured accuracy and costs.
+- [Submission guide](docs/en/SUBMISSION_GUIDE.md): course files and report template.
+- [Task allocation](TASK_ALLOCATION.md) and [contributions/AI use](notes/contributions_and_ai.md).
 
-## Open these files
+## Run
 
-- [Master notebook](ENG5338_CW2_notebook_GAS4.ipynb): data checks, tuning/replay audit, actual four-model validation, Member 5 timings, feasibility, locked final assessment and contribution records. Run all cells with a Python kernel from the project root.
-- [Member 5 benchmark notebook](experiments/member5_benchmark.ipynb): received Member 5 notebook, with independently measured Windows costs and the member's interpretation. Saved measurements are under `results/member5_local_py310/`; earlier integration measurements are kept separately.
-- [Notebook guide](docs/en/NOTEBOOK_GUIDE.md) and [中文说明](docs/zh/Notebook解读与问答_zh.md): current structure, evidence and running instructions.
-- [Task allocation](TASK_ALLOCATION.md) and [contribution/AI log](notes/contributions_and_ai.md).
+Keep the complete project together. In a Python environment, run from the project root:
 
-The three model owners have supplied their notebooks and result archives. Their latest configurations are integrated. Member 3's current version is depth 14, with 400 trees, minimum leaf size 10 and max_features=0.8. The original depth-12 run is retained as history.
+```sh
+python -m pip install -r requirements.lock.txt
+python run_notebook.py
+```
 
-## Run and reproduce
+For Jupyter or VS Code, select that environment, open the main notebook, restart the kernel and run all cells. For Colab, extract the whole project and use its root as the working directory.
 
-**Jupyter / VS Code:** open the whole project folder, select a Python environment with `requirements.lock.txt` installed, open the master notebook, restart its kernel and run all cells. `run_notebook.py` provides the same execution using its own Python interpreter. All required project assets are included in the reproducibility ZIP.
+Default execution repeats five-fold validation of the four selected configurations, checks submitted searches and saved replays, verifies Member 5 timings, and loads the saved assessments. `RUN_FULL_SEARCHES=True` repeats the latest 38 supplied configurations (190 CV fits). The fixed-model replay switch reproduces the saved Extra Trees predictions. Both switches default to False.
 
-**Colab:** upload/extract the whole repository ZIP, set the working directory to its extracted project root, then open/run the notebook. Uploading the notebook alone is insufficient because it imports `src/` and reads the shared CSV. Save downloaded outputs before a temporary cloud runtime is discarded. The master notebook has been executed in a fresh Linux kernel; Member 5 supplied the Windows benchmark.
+Check existing results with `python scripts/verify_integration.py`. Numerical runtime and versions are in results/development/runtime.json; Member 5's Windows environment is in results/member5_local_py310/runtime.json.
 
-Default master execution re-runs five-fold validation of the four selected configurations and saves fresh results. It verifies the member-submitted searches and their recorded replays. Set `RUN_FULL_SEARCHES=True` to repeat the latest supplied grids. Optional switches clearly print whether work ran. Member notebooks under `experiments/` use the same configuration source; all model definitions come from the saved owner settings.
+## Protocol and results
 
-`requirements.lock.txt` records exact package versions for the integration environment. Python, hardware, threads and versions are recorded in `results/development/runtime.json`; the reported Member 5 benchmark runtime is recorded separately in `results/member5_local_py310/runtime.json`. Cross-version scores can differ slightly. Reproduce candidate comparisons in one environment.
+CO is the target; inputs are AT, AP, AH, AFDP, GTEP, TIT, TAT, TEY and CDP. Development uses 2011–2013 (22,191 rows); later assessment uses 2014–2015 (14,542 rows). Five expanding folds use a 24-row gap, seed 42 and one numerical thread. MAE selects parameters. Each fold fits its own median imputer; OLS also fits a scaler.
 
-## Current protocol and boundaries
+**Current recommendation: Extra Trees**, with 400 trees, depth 14, minimum leaf size 10 and max_features=0.8. Development-validation MAE is 0.7226 mg/m³ and coverage is 81.76% within ±1 mg/m³. Member 5 measured 19.03 ms median single-row prediction on Windows. The project coverage target is 90%; the original 10 ms reference remains in the cost comparison. Current selection prioritises MAE.
 
-CO target; inputs AT/AP/AH/AFDP/GTEP/TIT/TAT/TEY/CDP; development 2011–2013, later assessment 2014–2015; five expanding folds, gap=24 rows, seed=42; MAE selects parameters. Imputation and OLS scaling fit within each training fold. NOx is excluded as a deployment input. Course CSV and protocol are hash checked.
+HGB was assessed first: MAE 0.8998 and coverage 70.00%. Wenyi then requested accuracy-first selection from the existing development ranking. Extra Trees assessment on the same 2014–2015 observations gives MAE 0.8011, RMSE 1.3654, R² 0.6111 and coverage 73.36%. CW1 also used those years. Both assessment records retain their input snapshots, hashes and predictions. A new future period supplies the next confirmation stage.
 
-**Recommended pipeline: Extra Trees**, with development-validation MAE 0.7226 mg/m³ and coverage 81.76%. Median single-row prediction is 19.03 ms on Member 5's Windows laptop. The project target is ≥90% within ±1 mg/m³. The final comparison prioritises MAE and reports computational cost alongside accuracy.
-
-**Assessment history:** HGB was assessed first (MAE 0.8998, coverage 70.00%). After reviewing that result, Wenyi prioritised predictive MAE over the original 10 ms gate and selected Extra Trees from the existing development ranking. Extra Trees was assessed on the same 2014–2015 observations (MAE 0.8011, coverage 73.36%). CW1 also used those years. The two records are stored under `results/final/` and `results/final_extra_trees/`. A new future period supplies the next confirmation stage.
-
-## Directory map
+## Repository layout
 
 | Location | Purpose |
 |---|---|
-| `ENG5338_CW2_notebook_GAS4.ipynb` | Main integrated submission notebook |
-| `src/` | Common protocol, latest model construction, validation, diagnostics and cost functions |
-| `experiments/` | Portable member 2/3/4 entries and member 5 benchmarking |
-| `data/` | One unchanged course CSV |
-| `results/submitted/` | Members' numerical search evidence and environments; versions kept separate |
-| `results/development/` | Fresh common-runtime validation, prediction vectors and diagnostic tables |
-| `results/costs/` | Earlier Linux reference measurements, kept separate |
-| `results/member5_local_py310/` | Member 5 independent Windows timings, raw samples and environment |
-| `results/search_reproduction/` | Executed common-runtime replays of the three latest tuning grids |
-| `results/final/` | Original HGB lock and assessment, preserved unchanged as history |
-| `results/final_extra_trees/` | Accuracy-first decision revision and secondary Extra Trees assessment |
-| `results/submission/` | Combined tables, document evidence and notebook execution audit |
-| `submission/` | Local-only report/slides/notebook and supporting upload files |
-| `figures/development/`, `figures/submission/` | Reproducibly generated validation and report/slide plots |
-| `notes/` | Member-reported analyses, receipt hashes and living contribution/AI log |
-| `docs/coursework/` | Original brief and report templates |
-| `docs/en/`, `docs/zh/` | Current English and Chinese model, notebook and submission guides |
-| `.local_private/pre_github_update_2026-11-10/` | Local-only backup of superseded starters, outputs and review history |
-| `.local_private/submissions/` | Untouched original received files, local only and ignored by Git |
+| src/ | Shared protocol, model construction, validation, diagnostics and cost functions |
+| experiments/ | Member 2/3/4 model entries and Member 5 benchmark notebook |
+| data/ | Unchanged course CSV |
+| results/submitted/ | Latest model-owner search exports and settings |
+| results/search_reproduction/ | Common-runtime search replays |
+| results/development/ | Common validation metrics, per-row predictions and diagnostics |
+| results/member5_local_py310/ | Member 5 Windows timing samples and runtime |
+| results/final/ | Original HGB decision and assessment |
+| results/final_extra_trees/ | Accuracy-first Extra Trees decision and assessment |
+| results/submission/ | Combined comparison and notebook execution audit |
+| figures/submission/ | Three report/presentation figures |
+| notes/ | Attributed member analysis, receipt hashes and contribution record |
+| docs/ | Course brief/templates and concise English guides |
+| scripts/verify_integration.py | Recalculate metrics and check experiment records |
 
-Original member files are archived locally. Redundant versions are preserved outside the active root. Raw returns include student IDs and local paths and are kept in ignored local storage. Submitted numerical evidence is published separately; original names and hashes are in `notes/received_manifest.json`.
+Course PDFs, editable drafts and group-review packages are shared separately. Local study material, document-generation tools, generated intermediate exports and archived experiments are ignored by Git. Member notebook reruns write to ignored results/member_runs/; optional searches write to results/search_reruns/.
 
-For now, members may send notebook/ZIP files in the group and Wenyi integrates them. GitHub branches/PRs remain available; received files document the members’ model work. The public collaboration repository is `651yyds3939/ENG5338_CW2`. The local `submission/` directory contains the group-review ZIP and course files.
-
-## Project guides
-
-- [Notebook and reproduction](docs/en/NOTEBOOK_GUIDE.md) · [中文](docs/zh/Notebook解读与问答_zh.md)
-- [Model comparison](docs/en/MODEL_GUIDE.md) · [中文](docs/zh/候选模型说明与选型建议_zh.md)
-- [Submission and document build](docs/en/SUBMISSION_GUIDE.md) · [中文](docs/zh/提交与答辩说明_zh.md)
-
-Report and slides are built from verified Notebook exports using `scripts/build_submission.py` (optional document dependencies in `requirements.build.txt`). `scripts/package_submission.py` copies the executed Notebook and packages supporting files. Student identity data is held only in the ignored local identity file. Final contribution wording must be reviewed by all members. Dataset: Kaya, Tüfekci and Uzun (2019), *Gas Turbine CO and NOx Emission Data Set*, DOI 10.24432/C5WC95.
+Dataset: Kaya, Tüfekci and Uzun (2019), *Gas Turbine CO and NOx Emission Data Set*, DOI [10.24432/C5WC95](https://doi.org/10.24432/C5WC95). Course CSV SHA-256: 6295ecd391e757ab5e029bdb54aee607887374861f656a26281b5a0e4e524b85.

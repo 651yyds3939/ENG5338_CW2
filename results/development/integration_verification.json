@@ -1,8 +1,0 @@
-{
-  "four_models_evaluated": true,
-  "validation_predictions_per_model": 18490,
-  "preprocessing_audit_passed": true,
-  "protocol_id": "454f332babc7",
-  "runtime_id": "e36f23212f5d",
-  "final_test_run": false
-}

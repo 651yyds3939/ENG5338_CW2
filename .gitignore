@@ -20,3 +20,27 @@ results/search_reruns/
 
 # Course-upload files contain student IDs; do not publish by accident
 /submission/
+
+# Local study material and document-generation tools
+/model_plan.json
+/requirements.build.txt
+/scripts/build_submission.py
+/scripts/check_submission.py
+/scripts/package_submission.py
+/scripts/package_group_review.py
+/results/development/split_manifest.csv
+/results/development/submitted_search_audit.csv
+/results/member5_local_py310/member5_comparison.csv
+/results/submission/evidence.json
+/docs/zh/
+/figures/development/
+
+# Superseded integration measurements and status exports
+/results/costs/
+/results/submitted/member3/run1/
+/scripts/benchmark_models.py
+/results/experiment_status.csv
+/results/integration_checks.json
+/results/development/integration_verification.json
+/results/development/feasibility.csv
+/results/submission/verification.json

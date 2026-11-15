@@ -10,7 +10,7 @@
 | 4 — Hansini Devaraja | HGB search, selected configuration, fold results and plots | HGB methods, results and temporal interpretation |
 | 5 — Sauhandikaa Senthil Arumugam | Independent Windows runtime comparison of all four pipelines | Benchmark conditions, accuracy–cost comparison and interpretation |
 
-Attributed member analyses are in member2_submitted_analysis.md through member5_submitted_analysis.md. Received original notebooks and ZIPs are stored in ignored local archives; [the receipt manifest](received_manifest.json) lists filenames and hashes. Member 3's latest results supersede the earlier run; both search records retain their provenance.
+Attributed member analyses are in member2_submitted_analysis.md through member5_submitted_analysis.md. Received original notebooks and ZIPs are stored in ignored local archives; [the receipt manifest](received_manifest.json) lists filenames and hashes. Member 3's latest results supersede the earlier run; the latest search remains public and the earlier search is archived locally.
 
 ## AI-assisted integration and drafting
 
@@ -27,3 +27,10 @@ Wenyi supplied all five student IDs on 13 November 2026 and requested seven-digi
 Old planning documents, superseded integration snapshots and duplicate allocation material were moved to ignored .local_private/repository_cleanup_2026-11-13/. Current English and Chinese guides describe the executed project. Numerical search receipts, the earlier depth-12 Extra Trees run and both assessment records retain their original bytes.
 
 Two frozen Windows cost-input CSV snapshots retain their original CRLF bytes through explicit .gitattributes rules. A complete Git add/checkout round trip verified their hashes and both assessment records. The reproducibility package includes these Git attributes and all document-generation scripts/dependencies.
+
+
+## Final repository trim — 15 November 2026
+
+Archived superseded Linux reference costs, Member 3's first search and outdated integration/status summaries locally. Chinese study notes, generated development plots, draft-document scripts and derived exports remain local and are ignored by Git. The public project keeps the master notebook, current member entries, source/data, latest search evidence, Windows benchmark and both assessment records. The Member 5 portable notebook now displays its Windows measurements directly; its original received file is preserved unchanged in the local archive.
+
+Poon shared a revised report in the official LaTeX template on 15 November. Sauhandikaa volunteered to prepare the presentation slides. Group review and contribution confirmation continue from those shared documents.

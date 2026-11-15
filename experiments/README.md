@@ -3,7 +3,7 @@
 Open these notebooks from the project checkout; the complete repository (including `src/`, `data/` and `results/submitted/`) is required.
 
 - `member2_random_forest.ipynb`: latest Random Forest settings, optional latest-grid rerun, fold validation, plot and final result export.
-- `member3_extra_trees.ipynb`: latest depth-14 Extra Trees settings; earlier depth-12 search remains historical.
+- `member3_extra_trees.ipynb`: latest depth-14 Extra Trees settings. Earlier depth-12 files are archived locally.
 - `member4_hist_gradient_boosting.ipynb`: latest HGB settings, portable plotting and export after plots.
 - `member5_benchmark.ipynb`: received Member 5 notebook, with independent Windows costs and contribution analysis. Loads preserved `results/member5_local_py310/` measurements on rerun; the raw original is kept in the ignored submission archive.
 

@@ -6,9 +6,9 @@ Shared model pool: Linear Regression, Random Forest, Extra Trees and Histogram G
 |---|---|---|
 | 1 — Wenyi Liu | Shared protocol, OLS, coordination and AI-assisted code/result/document integration | Maintain the master project and assemble the group submission |
 | 2 — Jiaqi Chen (Kiki) | RF searches, settings, validation, interpretation and high-CO exploration | Check RF results and contribution details |
-| 3 — Sirawich Anantapong (Poon) | Extra Trees experiments; latest depth-14 notebook and results | Check Extra Trees material and edit the report draft |
+| 3 — Sirawich Anantapong (Poon) | Extra Trees experiments; latest depth-14 notebook and results; report transferred into the official LaTeX template | Coordinate final report review |
 | 4 — Hansini Devaraja | HGB searches, settings, validation, plots and analysis | Check HGB results and contribution details |
-| 5 — Sauhandikaa Senthil Arumugam | Independent Windows timing of all four pipelines | Check computational comparison and contribution details |
+| 5 — Sauhandikaa Senthil Arumugam | Independent Windows timing of all four pipelines | Prepare presentation slides and check computational comparison |
 
 ## Assessment and drafting
 
@@ -24,4 +24,4 @@ Wenyi maintains the master notebook. Model owners can send notebooks and results
 
 Upload one group set: ENG5338_CW2_report_GAS4.pdf, ENG5338_CW2_presentation_GAS4.pdf and ENG5338_CW2_notebook_GAS4.ipynb. Local course files and the group-review ZIP are in submission/.
 
-[Contribution and AI record](notes/contributions_and_ai.md) · [Submission guide](docs/en/SUBMISSION_GUIDE.md) · [中文](docs/zh/提交与答辩说明_zh.md)
+[Contribution and AI record](notes/contributions_and_ai.md) · [Submission guide](docs/en/SUBMISSION_GUIDE.md)
